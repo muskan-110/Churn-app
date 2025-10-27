@@ -20,14 +20,15 @@ st.set_page_config(page_title="Customer Churn Predictor", layout="wide")
 
 def load_gif_base64(filename, width=50):
     """Convert a local GIF to base64 HTML image tag."""
-    with open(filename, "rb") as f:
+    path = os.path.join(BASE_DIR, "icons", filename)
+    with open(path, "rb") as f:
         data = base64.b64encode(f.read()).decode("utf-8")
-    return f'<img src="data:image/gif;base64,{data}" width="{width}" style="vertical-align:middle; margin-right:10px;">'
+    return f'<img src="data:image/gif;base64,{data}" width="{width}" style="display:block;margin:auto;">'
 
-
-stay_gif = load_gif_base64("icons/target-unscreen.gif", 60)     
-churn_gif = load_gif_base64("icons/alert.gif", 60)      
-sparkle_gif = load_gif_base64("icons/sparkle.gif", 40) 
+# Updated calls
+stay_gif = load_gif_base64("target-unscreen.gif", 60)
+churn_gif = load_gif_base64("alert.gif", 60)
+sparkle_gif = load_gif_base64("sparkle.gif", 40)
     
 
 st.markdown("""
