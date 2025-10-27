@@ -294,9 +294,13 @@ st.markdown("""
 
 st.markdown('<h1 class="title"> Customer Churn Prediction</h1>', unsafe_allow_html=True)
 st.markdown(
-    f'<p class="subtitle" style="display:flex; align-items:center; justify-content:center; gap:2px;">'
-    f'{sparkle_gif} Predict whether a customer will stay or churn using ML intelligence {sparkle_gif}'
-    f'</p>',
+    f'''
+    <p class="subtitle" style="display:flex; align-items:center; justify-content:center;">
+        <span style="margin-right:6px;">{sparkle_gif}</span>
+        Predict whether a customer will stay or churn using ML intelligence
+        <span style="margin-left:6px;">{sparkle_gif}</span>
+    </p>
+    ''',
     unsafe_allow_html=True
 )
 
