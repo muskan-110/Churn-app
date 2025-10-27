@@ -293,7 +293,12 @@ st.markdown("""
 # --- Header ---
 
 st.markdown('<h1 class="title"> Customer Churn Prediction</h1>', unsafe_allow_html=True)
-st.markdown(f'<p class="subtitle">{sparkle_gif} Predict whether a customer will stay or churn using ML intelligence {sparkle_gif}</p>', unsafe_allow_html=True)
+st.markdown(
+    f'<p class="subtitle" style="display:flex; align-items:center; justify-content:center; gap:10px;">'
+    f'{sparkle_gif} Predict whether a customer will stay or churn using ML intelligence {sparkle_gif}'
+    f'</p>',
+    unsafe_allow_html=True
+)
 
 
 
