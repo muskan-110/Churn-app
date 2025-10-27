@@ -3,13 +3,16 @@ import pandas as pd
 import pickle
 import base64
 from pathlib import Path
+import os
 
 
+BASE_DIR = os.path.dirname(__file__)
 
-with open("model_xgboost.pkl", "rb") as f:
+# Load model and encoders safely using absolute paths
+with open(os.path.join(BASE_DIR, "model_xgboost.pkl"), "rb") as f:
     model = pickle.load(f)
 
-with open("label_encoders.pkl", "rb") as f:
+with open(os.path.join(BASE_DIR, "label_encoders.pkl"), "rb") as f:
     label_encoders = pickle.load(f)
 
 
