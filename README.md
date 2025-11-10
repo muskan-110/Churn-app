@@ -2,7 +2,7 @@
 
 An end-to-end Machine Learning project that predicts whether a telecom customer is likely to churn or stay, built using XGBoost for model training and Streamlit for a fully interactive web interface.
 
-🌐 Live Demo
+🌐 Live Demo : https://churn-app-3umtgwznfthd2epx8fyu88.streamlit.app/
 
 
 🏗️ Project Overview
