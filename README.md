@@ -77,7 +77,7 @@ These are later used by the Streamlit app for real-time predictions.
 The app allows users to input customer details and get instant predictions.
 
 ⚙️ Tech Stack
-   Component	              Technology
+ -> Component	            -> Technology
 1. Frontend	              Streamlit
 2. Backend / Model	       XGBoost, Scikit-learn
 3. Data Handling	         Pandas, NumPy
