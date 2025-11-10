@@ -13,11 +13,11 @@ It aims to help telecom companies identify customers who are likely to discontin
 
 🧩 Key Features
 
-✅ Interactive Streamlit Frontend – Clean, modern UI for easy data input and churn prediction
-✅ XGBoost Model – Trained for high accuracy and robustness
-✅ Label Encoding for Categorical Variables – Consistent mapping across train and inference stages
-✅ Imbalanced Data Handling – Applied SMOTE (Synthetic Minority Oversampling Technique) to balance churn vs. non-churn classes
-✅ Modular Codebase – Easy to maintain, modify, and extend
+1. Interactive Streamlit Frontend – Clean, modern UI for easy data input and churn prediction
+2. XGBoost Model – Trained for high accuracy and robustness
+3. Label Encoding for Categorical Variables – Consistent mapping across train and inference stages
+4. Imbalanced Data Handling – Applied SMOTE (Synthetic Minority Oversampling Technique) to balance churn vs. non-churn classes
+5. Modular Codebase – Easy to maintain, modify, and extend
 
 📊 Data Processing & Model Training
 
@@ -76,36 +76,12 @@ These are later used by the Streamlit app for real-time predictions.
 
 The app allows users to input customer details and get instant predictions.
 
-Prediction Logic
-
-When the “Predict Churn” button is clicked:
-
-User input is converted into a DataFrame.
-
-Label Encoders transform categorical values.
-
-The trained XGBoost model predicts churn probability.
-
 ⚙️ Tech Stack
 Component	              Technology
 Frontend	              Streamlit
-Backend / Model	          XGBoost, Scikit-learn
-Data Handling	          Pandas, NumPy
-Visualization	          Matplotlib, Seaborn
-Deployment	              Streamlit Cloud
-Environment	              Python 3.10+
+Backend / Model	       XGBoost, Scikit-learn
+Data Handling	         Pandas, NumPy
+Visualization	         Matplotlib, Seaborn
+Deployment	            Streamlit Cloud
+Environment	           Python 3.10+
 
-
-🚀 Run Locally
-1️⃣ Clone the repository
-git clone https://github.com/yourusername/customer-churn-app.git
-cd customer-churn-app/app
-
-2️⃣ Install dependencies
-pip install -r requirements.txt
-
-3️⃣ Run the Streamlit app
-streamlit run app.py
-
-
-Then open http://localhost:8501 in your browser.
