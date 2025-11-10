@@ -77,11 +77,11 @@ These are later used by the Streamlit app for real-time predictions.
 The app allows users to input customer details and get instant predictions.
 
 ⚙️ Tech Stack
-Component	              Technology
-Frontend	              Streamlit
-Backend / Model	       XGBoost, Scikit-learn
-Data Handling	         Pandas, NumPy
-Visualization	         Matplotlib, Seaborn
-Deployment	            Streamlit Cloud
-Environment	           Python 3.10+
+   Component	              Technology
+1. Frontend	              Streamlit
+2. Backend / Model	       XGBoost, Scikit-learn
+3. Data Handling	         Pandas, NumPy
+4. Visualization	         Matplotlib, Seaborn
+5. Deployment	            Streamlit Cloud
+6. Environment	           Python 3.10+
 
